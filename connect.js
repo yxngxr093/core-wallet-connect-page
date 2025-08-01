@@ -20,7 +20,7 @@ document.getElementById("MetaMask-button").addEventListener("click", async () =>
         //check network (blockchain)
         const network = await provider.getNetwork();
         if (network.chainId !== 1115) {
-            statusDiv.textContent("Please switch to Core Testnet in MetaMask");
+            statusDiv.textContent= "Please switch to Core Testnet in MetaMask";
             return;
         }
 
